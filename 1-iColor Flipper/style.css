@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  background: white;
+  min-height: 10px;
+  text-align: center;
+  padding: 0.7rem;
+  font-size: 28px;
+}
+
+h1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  padding: 1rem;
+  width: 60vw;
+  height: 15vh;
+  color: white;
+  border-radius: 16px;
+}
+
+.btn {
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15vw;
+  height: 4vh;
+  text-align: center;
+}

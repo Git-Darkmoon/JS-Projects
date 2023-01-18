@@ -1,0 +1,48 @@
+@use "./mixins" as m;
+
+.navBar {
+  background: rgb(4, 47, 83);
+  background: linear-gradient(
+    56deg,
+    rgba(4, 47, 83, 1) 25%,
+    hsl(193, 97%, 40%) 62%,
+    rgba(4, 47, 83, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 4rem;
+}
+
+.logo {
+  width: 50%;
+}
+
+.logo {
+  padding-left: 3rem;
+  letter-spacing: 5px;
+  color: #eee;
+  font-size: 1.35rem;
+}
+
+.nav-links {
+  width: 100%;
+  @include m.flexCenter;
+  gap: 2rem;
+
+  li {
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      color: #eee;
+      font-size: 1.25rem;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: #f90;
+        font-size: 1.35rem;
+      }
+    }
+  }
+}

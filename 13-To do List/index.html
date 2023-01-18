@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/cute-clipart/2x/wish-list.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/35ef313ba4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>To do List</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1 id="title">To Do List</h1>
+        <input id="input" class="input" type="text" placeholder="Name..." />
+        <button id="btn">Add Item</button>
+
+        <div class="items">
+          <ul>
+            <li>
+              <p>Some Example</p>
+              <button id=" checkList" style="display: none"></button>
+              <button id=" eraseList" style="display: none"></button>
+              <span>
+                <label class="checkList" for="checkList"
+                  ><i class="far fa-check-circle"></i
+                ></label>
+                <label class="eraseList" for="eraseList">
+                  <i class="far fa-times-circle"></i
+                ></label>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

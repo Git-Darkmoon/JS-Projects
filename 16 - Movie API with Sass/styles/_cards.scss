@@ -1,0 +1,116 @@
+@use "./mixins" as m;
+
+$redy: #f33e34;
+
+.card {
+  background-color: hsl(249, 34%, 13.5%);
+  max-width: 20.85rem;
+  min-width: 20.85rem;
+  max-height: 45rem;
+  min-height: 36.25rem;
+  border-radius: 1rem;
+  color: #eee;
+  transition: transform 0.3s ease-in-out;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 25.25rem;
+    transition: transform 0.45s ease-in-out;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+  }
+  .movieTitle {
+    margin-block: 1rem;
+    margin-inline: 0.85rem;
+  }
+
+  .rateSection {
+    @include m.flexCenter();
+    justify-content: space-between;
+    margin-inline: 1rem;
+    margin-block: 0.15rem;
+
+    .stars {
+      color: $redy;
+
+      .votes {
+        display: flex;
+        align-items: center;
+
+        .votesCount {
+          margin-inline-end: 0.35rem;
+          color: hsla(3, 89%, 58%, 0.5);
+        }
+      }
+    }
+  }
+
+  h4,
+  details {
+    color: #847e86;
+  }
+
+  details > summary {
+    list-style-type: "👉 ";
+  }
+
+  details[open] > summary {
+    list-style-type: "❌ ";
+  }
+
+  details {
+    margin-inline: 0.85rem;
+  }
+
+  summary {
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: rgba(238, 238, 238, 0.75);
+    font-weight: bold;
+    margin-block: 0.65rem;
+    margin-inline-start: 0.25rem;
+  }
+  .card-bottom {
+    @include m.flexCenter();
+    justify-content: space-between;
+    margin-inline: 1rem;
+    margin-block: 1.25rem;
+
+    button {
+      background-color: transparent;
+      border: 2px solid $redy;
+      padding-block: 0.35rem;
+      padding-inline: 0.75rem;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.075);
+      }
+
+      a {
+        text-decoration: none;
+        color: $redy;
+      }
+    }
+
+    div {
+      display: flex;
+      gap: 1.25rem;
+      color: $redy;
+      font-size: 1.25rem;
+
+      i {
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}

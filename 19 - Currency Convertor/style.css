@@ -1,0 +1,102 @@
+body {
+  text-align: center;
+  background: #111;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55vw;
+  height: 30vh;
+  background: hsla(33, 100%, 70%, 0.75);
+  animation: ccircle 1.5s ease-in infinite;
+}
+
+@keyframes ccircle {
+  0% {
+    border-radius: 30px;
+  }
+  50% {
+    border-radius: 0px;
+  }
+  100% {
+    border-radius: 30px;
+  }
+}
+
+.title {
+  text-align: center;
+  color: #111;
+}
+
+input {
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+input:focus {
+  border-bottom: 5px ridge hotpink;
+}
+
+p {
+  display: inline-block;
+  font: bold 20px sans-serif;
+}
+
+#btn {
+  background: linear-gradient(to right, #ff0f7b, #f89b29);
+  color: white;
+  text-align: center;
+  line-height: var(--height);
+  font-size: calc(var(--height) / 2.5);
+  font-family: sans-serif;
+  margin-right: 5px;
+  letter-spacing: 0.2em;
+  border: 1px solid darkgoldenrod;
+  border-radius: 2em;
+  transform: perspective(500px) rotateY(-15deg);
+  text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+#btn:hover {
+  transform: perspective(500px) rotateY(15deg);
+  text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white, transparent);
+  left: -100%;
+  transition: 1s;
+}
+
+#btn:hover::before {
+  left: 100%;
+}
+
+select {
+  font-size: 18px;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+#destinyCurrency {
+  display: inline-block;
+  white-space: nowrap;
+}

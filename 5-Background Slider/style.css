@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  width: 100vw;
+  background: linear-gradient(to top right, black 35%, rgb(80, 125, 145));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.title {
+  font-family: "Chela One", sans-serif;
+  font-size: 48px;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+
+  position: absolute;
+  top: 10%;
+}
+
+.image {
+  height: 50%;
+  width: 50%;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgb(0, 0, 0, 0.75)),
+    url(iWallpapers/img1.jpg) center/cover no-repeat fixed;
+  background-size: 100vw, 100vh;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  transition: background-image 0.45s ease-in;
+}
+
+.btn {
+  display: none;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 32px;
+  height: 100px;
+  width: 40px;
+  background-color: rgb(155, 153, 153, 0.5);
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+label:hover {
+  background-color: rgb(155, 153, 153, 0.8);
+}
+
+#left-label {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#right-label {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}

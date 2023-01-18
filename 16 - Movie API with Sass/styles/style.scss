@@ -1,0 +1,107 @@
+@use "./navbar";
+@use "./mixins" as m;
+@use "./cards";
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100&display=swap");
+
+$redy: #f33e34;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #001527;
+}
+
+.container {
+  margin-block: 1.75rem;
+  width: 100vw;
+
+  @include m.flexCenter();
+  flex-wrap: wrap;
+  gap: 4.15rem;
+}
+
+#returnBtn {
+  @include m.flexCenter();
+  position: fixed;
+  right: 1.75%;
+  bottom: 5%;
+
+  width: 2.5rem;
+  height: 2.15rem;
+  padding: 1rem;
+
+  border-radius: 50%;
+  background-color: $redy;
+  border: none;
+  transition: all 0.2s ease;
+
+  animation: floating 2s infinite ease-in-out;
+
+  &:hover {
+    animation-play-state: paused;
+    background-color: hsl(3, 89%, 60%);
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.35rem;
+    background-color: $redy;
+    color: hsl(249, 34%, 13.5%);
+    transition: all 0.2s ease;
+    &:hover {
+      background-color: hsl(3, 89%, 60%);
+    }
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(-0px);
+  }
+}
+
+footer {
+  width: 100vw;
+  height: 4rem;
+  @include m.flexCenter();
+  color: $redy;
+
+  p {
+    margin-inline: 2rem;
+  }
+
+  button {
+    background-color: $redy;
+    border: 2px solid $redy;
+    padding-block: 0.35rem;
+    padding-inline: 1.5rem;
+    border-radius: 0.15rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    color: hsl(249, 34%, 13.5%);
+
+    &:hover {
+      transform: scale(1.075);
+    }
+  }
+}
+
+/*fieldset {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+}*/

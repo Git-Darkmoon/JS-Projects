@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chela One", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.button {
+  background-color: darkorange;
+  padding: 1em 2em; /* 1em top and bottom padding and 2em left and right padding */
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+  font-size: 18px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  transition: all 0.35s ease-in-out;
+}
+
+.button:hover {
+  background-color: hsl(19, 100%, 50%);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #f4f4f4;
+  margin: 30% auto;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2), 0 7px 28px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  animation: modalOpen 0.5s ease-in;
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  color: #ccc;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.closeBtn:hover {
+  color: #ff1947;
+  text-shadow: 0 0 20px crimson;
+}

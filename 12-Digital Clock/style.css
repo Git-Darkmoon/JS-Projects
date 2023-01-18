@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+body {
+  font-family: "Major Mono Display", monospace;
+  background-color: #000;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clockDisplay {
+  font-size: 5rem;
+  color: #eee;
+  border: 1px solid #ccc;
+  padding: 5px 0px 5px 15px;
+
+  width: 60vw;
+}
+
+.drops {
+  margin-top: 50px;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  border-radius: 60% 40% 31% 69% / 38% 57% 43% 62%;
+  box-shadow: inset 10px 10px 10px rgba(255, 255, 255, 0.5),
+    15px 25px 10px rgba(255, 255, 255, 0.1),
+    10px 10px 20px rgba(255, 255, 255, 0.5),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.4);
+}
+
+.drops::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  background: rgb(255, 255, 255, 0.75);
+  box-shadow: 3px 3px 5px rgb(255, 255, 255, 0.95);
+  width: 20px;
+  height: 20px;
+  border-radius: 42% 58% 31% 69% / 38% 43% 43% 62%;
+}
+
+.drops::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 65px;
+  background: rgb(255, 255, 255, 0.75);
+  box-shadow: 1px 3px 5px rgb(255, 255, 255, 0.95);
+  width: 10px;
+  height: 10px;
+  border-radius: 57% 43% 31% 69% / 50% 43% 63% 62%;
+}

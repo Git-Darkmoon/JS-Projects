@@ -1,0 +1,124 @@
+.title {
+  text-align: center;
+  margin-top: 4.5rem;
+  font-size: 2rem;
+  font-family: monospace, cursive;
+}
+
+.underline {
+  background-color: rgb(102, 181, 255);
+  width: 6.5rem;
+  height: 5px;
+  position: absolute;
+  left: 45%;
+  top: 19%;
+  color: rgba(240, 248, 255, 0);
+  box-shadow: 0px 0px 5px rgb(117, 188, 255);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30rem;
+  height: 24.5rem;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-color: rgb(0, 0, 0);
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 8px hsl(0, 0%, 70%), -2px -2px 8px lightgrey;
+  background: rgb(255, 255, 255);
+}
+
+.img {
+  margin-top: 1rem;
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 8px -4px hsl(200, 100%, 42%);
+}
+
+.name {
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+}
+
+.job {
+  font-size: 12.5px;
+  text-transform: uppercase;
+  margin-top: -1rem;
+  color: hsl(200, 100%, 55%);
+}
+
+.info {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.backBtn {
+  display: none;
+}
+
+.forwardBtn {
+  display: none;
+}
+
+#backLabel {
+  font-family: monospace, cursive;
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: hsl(200, 100%, 55%);
+}
+
+#backLabel:hover {
+  cursor: pointer;
+}
+
+#forwardLabel {
+  font-family: monospace, cursive;
+  font-size: 2rem;
+  color: hsl(200, 100%, 55%);
+}
+
+#forwardLabel:hover {
+  cursor: pointer;
+}
+
+.random {
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    -40deg,
+    #fff,
+    rgb(181, 161, 253),
+    hsl(194, 97%, 74%),
+    #fff
+  );
+  background-size: 300% 300%;
+  animation: gradient 5s ease-in-out infinite;
+  border-color: rgba(255, 255, 255, 0);
+  font-family: monospace, cursive;
+  font-weight: bold;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.random:hover {
+  transform: translateY(-3px);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.random:active {
+  transform: translateY(1px);
+}

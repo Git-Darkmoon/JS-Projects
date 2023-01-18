@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  width: 70vw;
+}
+
+body {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container div {
+  padding: 2.5rem;
+}
+
+.sedans {
+  background-color: #e28525;
+}
+.suvs {
+  background-color: #016972;
+}
+.luxury {
+  background-color: #00403f;
+}
+
+i {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+button {
+  padding: 1rem;
+  border-radius: 18px;
+  border: none;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.sedans a {
+  color: #e28325;
+}
+.suvs a {
+  color: #016972;
+}
+.luxury a {
+  color: #00403f;
+}

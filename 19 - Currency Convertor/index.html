@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/35ef313ba4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Currency convertor <i class="fas fa-coins"></i></h1>
+
+      <input type="text" id="ocInput" />
+      <select name="currency" id="originCurrency">
+        <option value="none">--Currency--</option>
+        <option value="usd">$ USD</option>
+        <option value="eur">€ EUR</option>
+        <option value="cop">$ COP</option>
+      </select>
+      <p>To:</p>
+      <select name="currency" id="destinyCurrency">
+        <option value="none">--Currency--</option>
+        <option value="usd">$ USD</option>
+        <option value="eur">€ EUR</option>
+        <option value="cop">$ COP</option>
+      </select>
+      <br />
+      <br />
+      <button id="btn">Calculate</button>
+      <input type="text" class="result" readonly />
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

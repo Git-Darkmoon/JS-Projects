@@ -1,0 +1,70 @@
+body {
+  background: #222;
+  transition: all 0.3s ease-in;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 27vw);
+  grid-template-rows: repeat(2, 28vh);
+  gap: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  height: 80%;
+  font-family: "Poppins", sans-serif;
+  animation: shaking-text 1s ease-in infinite forwards;
+}
+
+@keyframes shaking-text {
+  0% {
+    transform: translate(0, 5px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 5px);
+  }
+}
+
+#one {
+  background-color: #dff3e4;
+}
+
+#two {
+  background-color: #7180b9;
+}
+
+#three {
+  background-color: #3423a6;
+}
+
+#four {
+  background-color: #9b03af;
+}
+
+#five {
+  background-color: #00e8fc;
+}
+
+#six {
+  background-color: #f5e2c8;
+}

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@1,200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.65)),
+    url("pexels-roberto-vivancos-2190283.jpg") center/cover no-repeat fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  position: relative;
+  background: rgba(240, 248, 255, 0.7);
+  width: 25vw;
+  height: 55vh;
+  border-radius: 20px;
+}
+
+header {
+  background: rgba(165, 42, 42, 0.75);
+  padding: 2px;
+  text-align: center;
+  font-size: 28px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+main {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h4 {
+  padding: 1rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.bill-title {
+  font-size: 18px;
+}
+
+#bill {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 18px;
+  margin-bottom: 0;
+  text-align: center;
+  width: 15vw;
+  outline: none;
+  border-radius: 6px;
+  border-color: linen;
+}
+
+#service {
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 7px;
+  border-color: aliceblue;
+  cursor: pointer;
+}
+
+#btn {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  padding: 5px;
+  border-color: transparent;
+  border-radius: 5px;
+  color: aliceblue;
+  background: rgba(165, 42, 42, 0.75);
+  transition: ease-in 80ms;
+}
+
+#btn:hover {
+  background: brown;
+  cursor: pointer;
+}
+
+#btn:active {
+  color: #b59b92;
+}
+
+.result {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.message {
+  text-align: center;
+  margin-top: 10px;
+  background: rgba(165, 42, 42, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    min-height: 50vh;
+    width: 40vw;
+  }
+
+  #bill {
+    width: 25vw;
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>FM | Expenses chart</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="balance">
+          <div class="information">
+            <p id="title">My Balance</p>
+            <h2 id="balanceAmount">$921.48</h2>
+          </div>
+          <div class="logo">
+            <div id="whiteCircle"></div>
+            <div id="darkCircle"></div>
+          </div>
+        </section>
+        <section class="spending">
+          <h2 id="spendingTitle">Spending - Last 7 days</h2>
+          <div class="graph">
+            <div class="barGraph">
+              <div class="bar" id="mon"></div>
+              <h5>mon</h5>
+            </div>
+            <div class="barGraph" id="tue">
+              <div class="bar"></div>
+              <h5>tue</h5>
+            </div>
+            <div class="barGraph" id="wed">
+              <div class="bar"></div>
+              <h5>wed</h5>
+            </div>
+            <div class="barGraph" id="thur">
+              <div class="bar"></div>
+              <h5>thur</h5>
+            </div>
+            <div class="barGraph" id="fri">
+              <div class="bar"></div>
+              <h5>fri</h5>
+            </div>
+            <div class="barGraph" id="sat">
+              <div class="bar"></div>
+              <h5>sat</h5>
+            </div>
+            <div class="barGraph" id="sun">
+              <div class="bar"></div>
+              <h5>sun</h5>
+            </div>
+          </div>
+        </section>
+        <div id="separator"></div>
+        <section class="belowInfo">
+          <div class="leftElements">
+            <h2 id="totalTitle">Total this month</h2>
+            <h1 id="monthTotal">$478.33</h1>
+          </div>
+          <div class="rightElements">
+            <h2 id="growth">+2.4%</h2>
+            <h2 id="lastMonthLabel">from last month</h2>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      Developed by
+      <a
+        id="githubProfile"
+        href="https://github.com/Git-Darkmoon"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Darkmoon</a
+      >
+      | Frontend Mentor
+    </footer>
+
+    <!-- mon tue wed thu fri sat sun    -->
+  </body>
+</html>

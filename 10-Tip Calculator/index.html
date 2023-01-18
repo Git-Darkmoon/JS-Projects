@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="coin.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <header><h4>Tip Calculator</h4></header>
+        <main>
+          <h4 class="bill-title">How much your bill ?</h4>
+          <input type="text" id="bill" placeholder="i.e 108.42" />
+          <h4 class="bill-title">How was your service ?</h4>
+          <select name="service" id="service" onchange="tp()">
+            <option value="none">-- Choose an option --</option>
+            <option value="excellent">Excellent :)</option>
+            <option value="good">Good</option>
+            <option value="normal">Normal</option>
+            <option value="meh">Meh :c</option>
+            <option value="notr">Not recommended</option>
+          </select>
+          <br />
+          <br />
+          <button type="submit" id="btn">Calculate</button>
+          <div class="result">
+            <div class="tipText">Voluntary tip ...</div>
+            <div class="tipValue">$???</div>
+          </div>
+          <div class="message">About my experience...</div>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

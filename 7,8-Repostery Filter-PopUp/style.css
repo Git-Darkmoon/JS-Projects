@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 3.5px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: rgb(170, 170, 170);
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: hsl(0, 0%, 47%);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/*  */
+
+body {
+  background-color: hsl(6, 100%, 92%); /*#eeeeee*/
+  font-family: "Kaushan Script", cursive;
+  transition: all 0.3s ease-in;
+}
+
+:root {
+  --widthImg-width: 350px;
+  --heightImg-height: 325px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 40px;
+  row-gap: 30px;
+  column-gap: 30px;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  font-size: 2.5rem;
+  transition: all 0.3s ease-in;
+}
+
+.title span {
+  font-size: 4rem;
+  color: hsl(332, 79%, 68%);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 20px;
+}
+
+.btn {
+  margin: 0 20px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  border: 1px solid black;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.25rem;
+  font-family: "Kaushan Script", cursive;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+  border-top-left-radius: 17.5px;
+  border-bottom-right-radius: 17.5px;
+  background-color: black;
+  color: hsl(332, 79%, 68%);
+}
+
+.btn:focus {
+  box-shadow: 0 0 10px 5px #dda0dd;
+}
+
+.food {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  transition: all 0.3s ease-in;
+}
+
+.food:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.fimg {
+  transition: all 0.4s ease-in-out;
+}
+.fimg:hover {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.food-img-one {
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  background: url(img/sweets-1.jpeg) center/cover no-repeat;
+}
+.food-img-two {
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  background: url(img/cupcake-1.jpeg) center/cover no-repeat;
+}
+.food-img-three {
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  background: url(img/cake-1.jpeg) center/cover no-repeat;
+}
+.food-img-four {
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  background: url(img/doughnut-1.jpeg) center/cover no-repeat;
+}
+.food-img-five {
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  background: url(img/sweets-2.jpeg) center/cover no-repeat;
+}
+.food-img-six {
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  background: url(img/cupcake-2.jpeg) center/cover no-repeat;
+}
+.food-img-seven {
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  background: url(img/cake-3.jpeg) center/cover no-repeat;
+}
+.food-img-eight {
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  background: url(img/doughnut-2.jpeg) center/cover no-repeat;
+}
+.food-img-nine {
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  background: url(img/sweets-3.jpeg) center/cover no-repeat;
+}
+.food-img-ten {
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  background: url(img/cupcake-3.jpeg) center/cover no-repeat;
+}
+.food-img-eleven {
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  background: url(img/cake-2.jpeg) center/cover no-repeat;
+}
+.food-img-twelve {
+  width: var(--widthImg-width);
+  height: var(--heightImg-height);
+  background: url(img/doughnut-3.jpeg) center/cover no-repeat;
+}
+
+/* ``` */
+
+.food-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 82px;
+  background-color: white;
+
+  font-size: 26px;
+  line-height: 24px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  box-shadow: 0 -10px 15px -5px rgba(0, 0, 0, 0.4);
+}
+
+/* PopUp Styling */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #f4f4f4;
+  margin: 5% auto;
+  padding: 20px;
+  width: 70%;
+  height: 80%;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2), 0 7px 28px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  animation: modalOpen 0.5s ease-in;
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+  position: absolute;
+  top: 0;
+  right: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Chela One", sans-serif;
+  cursor: pointer;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+
+  transition: all 0.15s ease-in-out;
+}
+
+.closeBtn:hover {
+  color: hsl(320, 79%, 72%);
+  text-shadow: 0 0 15px #ffa5e1;
+}
+
+/* ~~~ */
+
+.food-info span {
+  font-weight: bolder;
+}
+
+.hide {
+  display: none;
+}
+
+/* Dark Mode */
+
+.btnContainer {
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.titleBtn {
+  word-spacing: 4px;
+  letter-spacing: 8px;
+  white-space: nowrap;
+  font-weight: 780;
+  color: #000000;
+}
+
+.titleChecked {
+  font-weight: 780;
+  color: hsl(320, 79%, 68%);
+}
+
+#checkbox {
+  position: absolute;
+  top: 170%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* Styling the switch */
+
+.checkBtn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 62px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #707070;
+  transition: background-color ease 0.3s;
+}
+
+.checkBtn:before {
+  content: "on off";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  font: 10px/28px Helvetica;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-indent: -22px;
+  word-spacing: 37px;
+  color: #fff;
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+
+.checkBtn:checked {
+  background-color: #ee6dc3;
+}
+
+.checkBtn:checked:before {
+  left: 32px;
+}
+
+/* End of dark Mode */
+
+@media (max-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 528px) {
+  .titleBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  #checkbox {
+    position: relative;
+    left: -250px;
+    margin-top: 240px;
+  }
+}
+
+@media (max-width: 340px) {
+  #checkbox {
+    position: relative;
+    left: -200px;
+    margin-top: 240px;
+  }
+}

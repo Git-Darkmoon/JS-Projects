@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+
+$cream: hsl(30, 38%, 92%);
+$greeny: #3b8268;
+$graysh: hsl(0, 0%, 50%, 0.85);
+$font-body: 14px;
+$font-family-Monts: "Montserrat", sans-serif;
+$font-family-Fran: "Fraunces", serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $cream;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  max-width: 40rem;
+  height: 30rem;
+  background-color: #fff;
+  border-radius: 0.75rem;
+
+  #productImg {
+    width: 45vw;
+    height: 100%;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+  }
+
+  #overview {
+    padding-inline: 2rem;
+
+    #productType {
+      letter-spacing: 5px;
+      font-family: $font-family-Monts;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $graysh;
+      padding-block: 1.5rem;
+    }
+
+    #productTitle {
+      font-size: 2.15rem;
+      font-family: $font-family-Fran;
+    }
+
+    #productDescription {
+      font-family: $font-family-Monts;
+      font-size: 17px;
+      color: hsl(0, 0%, 50%, 1);
+      line-height: 1.5rem;
+    }
+
+    #prices {
+      width: 100%;
+      height: 3rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: $font-family-Fran;
+
+      #actualPrice {
+        font-size: 2rem;
+        color: $greeny;
+      }
+
+      #expiredPrice {
+        font-size: 0.75rem;
+        text-decoration: line-through;
+        color: $graysh;
+        font-family: $font-family-Monts;
+        margin-right: 4rem;
+      }
+    }
+
+    #buyBtn {
+      padding-block: 1rem;
+      width: 100%;
+
+      background-color: $greeny;
+      border: none;
+      border-radius: 0.5rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+
+      font-family: $font-family-Monts;
+      color: white;
+
+      cursor: pointer;
+      transition: 0.25s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
